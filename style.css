@@ -251,23 +251,6 @@ h1 {
 .paper .authors { color: var(--body); }
 .paper a { display: inline-block; margin-top: 0.45rem; font-size: 0.79rem; font-weight: 600; }
 
-.timeline { border-top: 1px solid var(--line); }
-.timeline-item {
-  padding: 2.25rem 0;
-  display: grid;
-  grid-template-columns: 155px 1fr;
-  gap: 2rem;
-  border-bottom: 1px solid var(--line-soft);
-}
-.timeline-meta { display: flex; flex-direction: column; color: var(--faint); font-size: 0.72rem; line-height: 1.7; }
-.timeline-item h3 { margin: 0; font-size: 1.13rem; }
-.timeline-item p { margin: 0.4rem 0 0; color: var(--muted); font-size: 0.88rem; }
-.timeline-item .organization { color: var(--brown); font-weight: 600; }
-.subsection { margin-top: 3.5rem; }
-.service-row { display: grid; grid-template-columns: 155px 1fr; gap: 2rem; font-size: 0.88rem; }
-.service-row span { color: var(--faint); }
-.service-row p { margin: 0; color: var(--body); }
-
 .cv-section + .cv-section { margin-top: 4rem; }
 .cv-row {
   padding: 1.55rem 0;
@@ -352,7 +335,6 @@ footer p { margin: 0; }
   .portrait-wrap { width: min(62%, 230px); }
   .home-content { padding-top: 0; }
   .inner-page { padding: 3rem 0 4.5rem; }
-  .timeline-item { grid-template-columns: 120px 1fr; gap: 1.25rem; }
   footer { flex-direction: column; gap: 0.3rem; }
 }
 
@@ -362,12 +344,9 @@ footer p { margin: 0; }
   .identity-role { font-size: 0.6rem; }
   .portrait-wrap { width: min(68%, 230px); }
   .contact-summary div,
-  .timeline-item,
-  .service-row,
   .cv-row,
   .achievements article,
   .contact-list > div { grid-template-columns: 1fr; gap: 0.28rem; }
-  .timeline-meta { flex-direction: row; justify-content: space-between; }
   .actions { flex-direction: column; }
   .button { text-align: center; }
 }
