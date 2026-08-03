@@ -3,88 +3,248 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Personal website of Lux Liang">
-  <title>Lux Liang</title>
+  <meta name="description" content="Lux Liang is a Ph.D. student in Finance at Tsinghua University researching reliable AI forecasting, stochastic optimization, statistical learning, and conformal prediction.">
+  <meta name="author" content="Lux Liang">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta property="og:title" content="Lux Liang · Finance & Reliable AI">
+  <meta property="og:description" content="Research in reliable AI forecasting for financial markets and decision-making under uncertainty.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://luxliang.github.io/">
+  <meta property="og:image" content="https://luxliang.github.io/assets/lux-liang-portrait.webp">
+  <title>Lux Liang · Finance & Reliable AI</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
   <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Lux Liang, home">LL</a>
-    <nav aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#contact">Contact</a>
+    <a class="identity" href="#home" aria-label="Lux Liang, home">
+      <span class="identity-name">Lux Liang</span>
+      <span class="identity-role">Ph.D. Student · Finance & Reliable AI</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span></span><span></span>
+    </button>
+
+    <nav id="primary-nav" aria-label="Primary navigation">
+      <a href="#home" data-page-link="home">Home</a>
+      <a href="#research" data-page-link="research">Research</a>
+      <a href="#experience" data-page-link="experience">Experience</a>
+      <a href="#cv" data-page-link="cv">CV</a>
+      <a href="#contact" data-page-link="contact">Contact</a>
     </nav>
   </header>
 
-  <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <p class="eyebrow">Research · Build · Explore</p>
-      <h1 id="hero-title">Hi, I’m <em>Lux Liang.</em></h1>
-      <p class="hero-copy">
-        I work at the intersection of research, technology, and real-world problems.
-        This is where I share selected projects and ideas.
-      </p>
-      <div class="hero-actions">
-        <a class="button button-primary" href="#work">Explore my work</a>
-        <a class="button button-secondary" href="mailto:liang-lx25@mails.tsinghua.edu.cn">Email me</a>
-      </div>
-      <div class="status"><span aria-hidden="true"></span> Open to thoughtful conversations</div>
-    </section>
+  <div class="header-rule" aria-hidden="true"><span></span></div>
 
-    <section class="section about" id="about" aria-labelledby="about-title">
-      <p class="section-number">01 / About</p>
-      <div>
-        <h2 id="about-title">Curious by nature,<br>rigorous by practice.</h2>
-        <p>
-          I enjoy turning ambiguous questions into clear, useful work. Add a short
-          biography here: your research interests, current role, and what motivates you.
-        </p>
-      </div>
-    </section>
-
-    <section class="section work" id="work" aria-labelledby="work-title">
-      <div class="section-heading">
-        <p class="section-number">02 / Selected work</p>
-        <h2 id="work-title">A few things I’ve been exploring.</h2>
+  <main id="main-content" tabindex="-1">
+    <section class="page home-page" id="home" data-page="home" aria-labelledby="home-title">
+      <div class="portrait-wrap">
+        <img src="assets/lux-liang-portrait.webp" width="900" height="1125" alt="Portrait of Lux Liang">
       </div>
 
-      <div class="project-grid">
-        <article class="project-card featured">
-          <p class="project-type">Featured project</p>
-          <h3>Your research project</h3>
-          <p>Describe the question, your approach, and why the result matters.</p>
-          <a href="https://github.com/LuxLiang" target="_blank" rel="noreferrer">View on GitHub <span>↗</span></a>
-        </article>
-        <article class="project-card">
-          <p class="project-type">Working paper</p>
-          <h3>Paper or publication</h3>
-          <p>Add a short abstract and link to the paper, journal, or preprint.</p>
-          <a href="#contact">Coming soon <span>→</span></a>
-        </article>
-        <article class="project-card">
-          <p class="project-type">Experiment</p>
-          <h3>Tool or side project</h3>
-          <p>Show something you built, learned from, or are currently developing.</p>
-          <a href="https://github.com/LuxLiang" target="_blank" rel="noreferrer">Browse projects <span>↗</span></a>
-        </article>
+      <div class="home-content">
+        <p class="kicker">Welcome</p>
+        <h1 id="home-title">Lux Liang</h1>
+        <p class="role-line"><span aria-hidden="true"></span>Ph.D. in Finance at Tsinghua University</p>
+
+        <div class="bio">
+          <p>
+            I am a Ph.D. student in Finance at Tsinghua University. My research focuses on
+            <strong>reliable AI forecasting for financial markets</strong>, using stochastic
+            optimization, statistical learning, and conformal prediction to support
+            decision-making under uncertainty.
+          </p>
+          <p>
+            I am broadly interested in the interplay between modern machine learning,
+            computational methods, and financial decision-making—especially methods that
+            remain trustworthy when data and models are imperfect.
+          </p>
+          <p class="personal-note">Building reliable intelligence for uncertain markets.</p>
+        </div>
+
+        <div class="contact-summary">
+          <div><span>Email</span><a href="mailto:liang-lx25@mails.tsinghua.edu.cn">liang-lx25@mails.tsinghua.edu.cn</a></div>
+          <div><span>GitHub</span><a href="https://github.com/LuxLiang" target="_blank" rel="noreferrer">github.com/LuxLiang ↗</a></div>
+          <div><span>Location</span><p>Beijing, China</p></div>
+        </div>
+
+        <div class="actions">
+          <a class="button filled" href="#research">View research</a>
+          <a class="button" href="#cv">Academic CV</a>
+          <a class="button" href="mailto:liang-lx25@mails.tsinghua.edu.cn">Get in touch</a>
+        </div>
       </div>
     </section>
 
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <p class="section-number">03 / Contact</p>
-      <h2 id="contact-title">Have an interesting idea?</h2>
-      <a href="mailto:liang-lx25@mails.tsinghua.edu.cn">liang-lx25@mails.tsinghua.edu.cn <span>↗</span></a>
+    <section class="page inner-page" id="research" data-page="research" aria-labelledby="research-title" hidden>
+      <header class="page-heading">
+        <p class="kicker">Preprints & working papers</p>
+        <h2 id="research-title">Research</h2>
+        <p>My work spans reliable artificial intelligence, stochastic optimization, and computational methods for finance.</p>
+      </header>
+
+      <div class="research-group">
+        <h3>Statistics for AI</h3>
+        <article class="paper">
+          <p class="paper-status">Preprint · 2026</p>
+          <h4>Steer-to-Detect: Probing Hidden Representations for Detection of LLM-Generated Texts</h4>
+          <p class="authors"><strong>L. Liang</strong> and X. Li</p>
+          <p>arXiv preprint arXiv:2605.12890.</p>
+          <a href="https://arxiv.org/abs/2605.12890" target="_blank" rel="noreferrer">View preprint ↗</a>
+        </article>
+
+        <article class="paper">
+          <p class="paper-status">Working paper</p>
+          <h4>Rethinking LLM Subliminal Learning</h4>
+          <p class="authors"><strong>L. Liang</strong>, with Xiang Li (University of Pennsylvania)</p>
+        </article>
+      </div>
+
+      <div class="research-group">
+        <h3>Optimization & MCMC</h3>
+        <article class="paper">
+          <p class="paper-status">Preprint · 2025</p>
+          <h4>Enhancing Gradient-based Discrete Sampling via Parallel Tempering</h4>
+          <p class="authors"><strong>L. Liang</strong>, Y. Jia, and F. Zhou</p>
+          <p>arXiv preprint arXiv:2502.19240.</p>
+          <a href="https://arxiv.org/abs/2502.19240" target="_blank" rel="noreferrer">View preprint ↗</a>
+        </article>
+
+        <article class="paper">
+          <p class="paper-status">Preprint · 2024</p>
+          <h4>Non-asymptotic Convergence Analysis of the Stochastic Gradient Hamiltonian Monte Carlo Algorithm with Discontinuous Stochastic Gradient with Applications to Training of ReLU Neural Networks</h4>
+          <p class="authors"><strong>L. Liang</strong>, A. Neufeld, and Y. Zhang</p>
+          <p>arXiv preprint arXiv:2409.17107.</p>
+          <a href="https://arxiv.org/abs/2409.17107" target="_blank" rel="noreferrer">View preprint ↗</a>
+        </article>
+
+        <article class="paper">
+          <p class="paper-status">Working paper</p>
+          <h4>Accelerated Hamiltonian Monte Carlo Algorithms for Stochastic Optimization and Their Application in Finance</h4>
+          <p class="authors"><strong>L. Liang</strong>, Z. Wang, A. Neufeld, and Y. Zhang</p>
+        </article>
+
+        <article class="paper">
+          <p class="paper-status">Working paper</p>
+          <h4>Rethinking Replica Exchange Discrete Langevin Sampler</h4>
+          <p class="authors"><strong>L. Liang</strong>, with Feng Zhou (Renmin University of China)</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page inner-page" id="experience" data-page="experience" aria-labelledby="experience-title" hidden>
+      <header class="page-heading">
+        <p class="kicker">Beyond research</p>
+        <h2 id="experience-title">Experience</h2>
+        <p>Entrepreneurial and quantitative work connecting research with real-world applications.</p>
+      </header>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-meta"><span>Jan. 2025 — Present</span><span>Beijing</span></div>
+          <div>
+            <h3>Startup Co-founder</h3>
+            <p class="organization">Zhixun Technology</p>
+            <p>An AI-driven startup focused on automating grading, serving more than 30,000 students across 100+ universities.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-meta"><span>Jun. — Sept. 2023</span><span>Beijing</span></div>
+          <div>
+            <h3>Quantitative Researcher Intern</h3>
+            <p class="organization">Lingjun Investment · AUM over CNY 60 billion</p>
+            <p>Extracted more than 40 alpha factors from Level-2 market data to support the design of quantitative strategies.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="subsection">
+        <h3>Academic service</h3>
+        <div class="service-row">
+          <span>Reviewer</span>
+          <p>ICML 2026 Workshop on AI Forecasting</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page inner-page" id="cv" data-page="cv" aria-labelledby="cv-title" hidden>
+      <header class="page-heading">
+        <p class="kicker">Curriculum vitae</p>
+        <h2 id="cv-title">CV</h2>
+        <p>Education, academic recognition, and selected achievements.</p>
+      </header>
+
+      <div class="cv-section">
+        <h3>Education</h3>
+        <article class="cv-row">
+          <div class="cv-year">2025 — 2029<br><span>Expected</span></div>
+          <div>
+            <h4>Tsinghua University</h4>
+            <p class="degree">Ph.D. in Finance</p>
+            <p class="location">Beijing, China</p>
+          </div>
+        </article>
+
+        <article class="cv-row">
+          <div class="cv-year">2022 — 2025</div>
+          <div>
+            <h4>Renmin University of China</h4>
+            <p class="degree">M.Phil. in Financial Mathematics</p>
+            <p>GPA: 3.97/4.0 · Rank: 1st</p>
+            <p>Supervisor: Yuanyuan Ke · Exchange at University College Dublin</p>
+            <p class="location">Beijing, China</p>
+          </div>
+        </article>
+
+        <article class="cv-row">
+          <div class="cv-year">2018 — 2022</div>
+          <div>
+            <h4>Jilin University</h4>
+            <p class="degree">B.Sc. in Statistics · School of Mathematics</p>
+            <p>GPA: 90.2/100 · Rank: 2nd</p>
+            <p>Supervisors: Tieru Wu and Weipeng Sun</p>
+            <p class="location">Changchun, China</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="cv-section achievements">
+        <h3>Achievements & Awards</h3>
+        <article><span>Principal Scholarship</span><p>Renmin University of China · CNY 40,000</p></article>
+        <article><span>Gold Medal</span><p>HKU QIDS Competition (Kaggle) · Rank 1/300+</p></article>
+        <article><span>First-class Scholarships</span><p>Renmin University of China & Jilin University</p></article>
+      </div>
+    </section>
+
+    <section class="page inner-page contact-page" id="contact" data-page="contact" aria-labelledby="contact-title" hidden>
+      <header class="page-heading">
+        <p class="kicker">Let’s connect</p>
+        <h2 id="contact-title">Contact</h2>
+        <p>I am always happy to discuss research, collaboration, or ideas at the intersection of finance and reliable AI.</p>
+      </header>
+
+      <div class="contact-list">
+        <div><span>Email</span><a href="mailto:liang-lx25@mails.tsinghua.edu.cn">liang-lx25@mails.tsinghua.edu.cn</a></div>
+        <div><span>GitHub</span><a href="https://github.com/LuxLiang" target="_blank" rel="noreferrer">github.com/LuxLiang ↗</a></div>
+        <div><span>Institution</span><p>Tsinghua University</p></div>
+        <div><span>Location</span><p>Beijing, China</p></div>
+      </div>
+
+      <a class="large-mail-link" href="mailto:liang-lx25@mails.tsinghua.edu.cn">Send me an email <span>↗</span></a>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Lux Liang</p>
-    <a href="https://github.com/LuxLiang" target="_blank" rel="noreferrer">GitHub ↗</a>
+    <p>© <span id="year"></span> Lux Liang · Tsinghua University</p>
+    <p>Finance · Reliable AI · Decision-making under uncertainty</p>
   </footer>
 </body>
 </html>

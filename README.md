@@ -1,6 +1,6 @@
-# Lux Liang — Personal Website
+# Lux Liang — Academic Website
 
-Personal website published with GitHub Pages at <https://luxliang.github.io>.
+Academic website published with GitHub Pages at <https://luxliang.github.io>.
 
 ## Edit in VS Code
 
