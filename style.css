@@ -135,14 +135,6 @@ main { flex: 1; }
 }
 
 .portrait-wrap { position: relative; }
-.portrait-wrap::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 11px -11px -11px 11px;
-  border: 1px solid rgba(173, 138, 79, 0.42);
-  border-radius: 4px;
-}
 .portrait-wrap img {
   width: 100%;
   height: auto;
@@ -372,7 +364,6 @@ footer p { margin: 0; }
   nav a { padding: 0.45rem 0.65rem; }
   .home-page { padding: 2.6rem 0 4rem; grid-template-columns: 1fr; gap: 2.8rem; }
   .portrait-wrap { width: min(62%, 230px); }
-  .portrait-wrap::after { display: none; }
   .home-content { padding-top: 0; }
   .inner-page { padding: 3rem 0 4.5rem; }
   .timeline-item { grid-template-columns: 120px 1fr; gap: 1.25rem; }
