@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal website of Lux Liang">
+  <title>Lux Liang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Lux Liang, home">LL</a>
+    <nav aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Research · Build · Explore</p>
+      <h1 id="hero-title">Hi, I’m <em>Lux Liang.</em></h1>
+      <p class="hero-copy">
+        I work at the intersection of research, technology, and real-world problems.
+        This is where I share selected projects and ideas.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#work">Explore my work</a>
+        <a class="button button-secondary" href="mailto:liang-lx25@mails.tsinghua.edu.cn">Email me</a>
+      </div>
+      <div class="status"><span aria-hidden="true"></span> Open to thoughtful conversations</div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <p class="section-number">01 / About</p>
+      <div>
+        <h2 id="about-title">Curious by nature,<br>rigorous by practice.</h2>
+        <p>
+          I enjoy turning ambiguous questions into clear, useful work. Add a short
+          biography here: your research interests, current role, and what motivates you.
+        </p>
+      </div>
+    </section>
+
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <p class="section-number">02 / Selected work</p>
+        <h2 id="work-title">A few things I’ve been exploring.</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured">
+          <p class="project-type">Featured project</p>
+          <h3>Your research project</h3>
+          <p>Describe the question, your approach, and why the result matters.</p>
+          <a href="https://github.com/LuxLiang" target="_blank" rel="noreferrer">View on GitHub <span>↗</span></a>
+        </article>
+        <article class="project-card">
+          <p class="project-type">Working paper</p>
+          <h3>Paper or publication</h3>
+          <p>Add a short abstract and link to the paper, journal, or preprint.</p>
+          <a href="#contact">Coming soon <span>→</span></a>
+        </article>
+        <article class="project-card">
+          <p class="project-type">Experiment</p>
+          <h3>Tool or side project</h3>
+          <p>Show something you built, learned from, or are currently developing.</p>
+          <a href="https://github.com/LuxLiang" target="_blank" rel="noreferrer">Browse projects <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <p class="section-number">03 / Contact</p>
+      <h2 id="contact-title">Have an interesting idea?</h2>
+      <a href="mailto:liang-lx25@mails.tsinghua.edu.cn">liang-lx25@mails.tsinghua.edu.cn <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Lux Liang</p>
+    <a href="https://github.com/LuxLiang" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </footer>
+</body>
+</html>
