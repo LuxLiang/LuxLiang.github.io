@@ -1,4 +1,4 @@
-# Lux Liang — Academic Website
+# Luxu Liang — Academic Website
 
 Academic website published with GitHub Pages at <https://luxliang.github.io>.
 
