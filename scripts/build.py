@@ -9,7 +9,7 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://luxliang.github.io/"
 PAGES = {
-    "home": ("index.html", "Luxu Liang | Tsinghua University | Finance & Reliable AI",
+    "home": ("index.html", "Luxu Liang | Personal Homepage | Tsinghua University",
              "Luxu Liang is a Ph.D. student in Finance at Tsinghua University researching optimization, uncertainty quantification, reliable AI, and LLM-generated text detection."),
     "research": ("research.html", "Research | Luxu Liang | Tsinghua University",
                  "Research and publications by Luxu Liang on LLM-generated text detection, discrete sampling, stochastic optimization, and uncertainty quantification."),
